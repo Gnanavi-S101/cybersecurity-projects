@@ -14,6 +14,10 @@ Conducted a comprehensive security incident investigation involving unauthorized
 
 ## Investigation Process
 
+![Investigation Worksheet](investigation-worksheet.jpeg)
+
+*structured investigation framework used to analyze the security incident*
+
 ### Phase 1: Incident Analysis
 
 **Objective:** Identify key details about the security incident
@@ -33,6 +37,10 @@ Conducted a comprehensive security incident investigation involving unauthorized
 - Computer name: Up2-NoGud
 - IP address: 152.207.255.255
 
+!Event Log Evidence](event-log-details.jpeg)
+
+*Event log showing unauthorized payroll transaction attempt*
+
 ### Phase 2: Authorization Issues Identified
 
 **Critical security gap discovered:**
@@ -46,7 +54,11 @@ Expired contractor account with active access
 - Account had RBAC permissions that granted access to financial systems
 - No account deactivation process was enforced upon contract completion
 
-**Root cause:** Lack of automated account lifecycle management and failure to revoke access when employment/contract status changes.
+![Employee Directory Evidence](employee-directory.jpeg)
+
+*Employee directory showing Robert Taylor Jr's contract ended 12/27/2019 but account remained active*
+
+  **Root cause:** Lack of automated account lifecycle management and failure to revoke access when employment/contract status changes.
 
 **Security impact:** 
 - Unauthorized access to sensitive financial systems
