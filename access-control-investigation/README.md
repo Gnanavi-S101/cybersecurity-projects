@@ -14,7 +14,7 @@ Conducted a comprehensive security incident investigation involving unauthorized
 
 ## Investigation Process
 
-![Investigation Worksheet](investigation-worksheet.jpeg)
+![Investigation Worksheet](investigation-worksheet.png)
 
 *structured investigation framework used to analyze the security incident*
 
@@ -37,7 +37,7 @@ Conducted a comprehensive security incident investigation involving unauthorized
 - Computer name: Up2-NoGud
 - IP address: 152.207.255.255
 
-!Event Log Evidence](event-log-details.jpeg)
+!Event Log Evidence](event-log-details.png)
 
 *Event log showing unauthorized payroll transaction attempt*
 
@@ -54,7 +54,7 @@ Expired contractor account with active access
 - Account had RBAC permissions that granted access to financial systems
 - No account deactivation process was enforced upon contract completion
 
-![Employee Directory Evidence](employee-directory.jpeg)
+![Employee Directory Evidence](employee-directory.png)
 
 *Employee directory showing Robert Taylor Jr's contract ended 12/27/2019 but account remained active*
 
