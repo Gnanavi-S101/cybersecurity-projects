@@ -23,14 +23,14 @@ with open(import_file, "r") as file:
 ```
 
 Key concepts:
-**with** keyword - Automatically manages resources and ensures the file is closed, even if an error occurs
-**open()** function - Opens a file in Python
-First parameter: identifies the file to open
-Second parameter: indicates the operation mode
-**'r'** - read the file
-**'w'** - write to the file
-**'a'** - append to the file
-**as file** - Assigns a variable that references the file object for use in the code block
+-**with** keyword - Automatically manages resources and ensures the file is closed, even if an error occurs
+-**open()** function - Opens a file in Python
+-First parameter: identifies the file to open
+-Second parameter: indicates the operation mode
+-**'r'** - read the file
+-**'w'** - write to the file
+-**'a'** - append to the file
+-**as file** - Assigns a variable that references the file object for use in the code block
 
 ### 2. Read file contents
 
@@ -42,9 +42,9 @@ print(ip_addresses)
 ```
 
 Key concepts:
-**.read()** method - Converts the contents of the file into a string format
-Storing in ip_addresses variable allows us to work with the file data
-**print()** displays the file contents to verify successful reading
+-**.read()** method - Converts the contents of the file into a string format
+-Storing in ip_addresses variable allows us to work with the file data
+-**print()** displays the file contents to verify successful reading
 
 ### 3. Convert string to list
 
@@ -55,9 +55,9 @@ ip_addresses = ip_addresses.split()
 ```
 
 Key concepts:
-**.split()** method - Converts a string into a list by splitting it at whitespace (spaces, newlines)
-This transformation is necessary to iterate through individual IP addresses
-Each IP address becomes a separate element in the list for easier manipulation
+-**.split()** method - Converts a string into a list by splitting it at whitespace (spaces, newlines)
+-This transformation is necessary to iterate through individual IP addresses
+-Each IP address becomes a separate element in the list for easier manipulation
 
 ### 4. Iterate through the remove list
 
@@ -69,9 +69,9 @@ for element in remove_list:
 ```
 
 Key concepts:
-**for loop** - Iterates through each element in the remove_list
-**element** - Loop variable that represents each IP address during iteration
-This displays all restricted IP addresses that need to be removed from the allow list
+-**for loop** - Iterates through each element in the remove_list
+-**element** - Loop variable that represents each IP address during iteration
+-This displays all restricted IP addresses that need to be removed from the allow list
 
 ### 5. Remove IP addresses that are in the remove list
 
@@ -81,15 +81,15 @@ I used a list comprehension to create a new list containing only allowed IP addr
 ip_addresses = [ip for ip in ip_addresses if ip not in remove_list]
 ```
 
-Safer than modifying during iteration - instead of using .remove() inside a for loop, which can skip elements when modifying a list while iterating
-List comprehension - Creates a new list containing only IPs that are NOT in the remove_list
-More reliable - Critical for healthcare security where missing a restricted IP could be a compliance violation
-More Pythonic - Cleaner, more efficient single-pass solution
+-Safer than modifying during iteration - instead of using .remove() inside a for loop, which can skip elements when modifying a list while iterating
+-List comprehension - Creates a new list containing only IPs that are NOT in the remove_list
+-More reliable - Critical for healthcare security where missing a restricted IP could be a compliance violation
+-More Pythonic - Cleaner, more efficient single-pass solution
 
 Key concepts:
-List comprehension syntax: [expression for item in list if condition]
-if ip not in remove_list - Keeps only IPs that don't exist in the restricted list
-Result: A clean allowlist with all restricted IPs removed, with no risk of iteration bugs
+-List comprehension syntax: [expression for item in list if condition]
+-if ip not in remove_list - Keeps only IPs that don't exist in the restricted list
+-Result: A clean allowlist with all restricted IPs removed, with no risk of iteration bugs
 
 ### 6. Update the file with revised list
 
@@ -102,10 +102,10 @@ with open(import_file, "w") as file:
 ```
 
 Key concepts:
-**.join() method** - Concatenates every element of the list into a single string (opposite of .split())
-**"\n"** - Joins elements with newline characters to maintain readable format
-**"w"** parameter - Opens the file in write mode to overwrite existing contents
-**.write() method** - Writes the string data to the specified file
+-**.join() method** - Concatenates every element of the list into a single string (opposite of .split())
+-**"\n"** - Joins elements with newline characters to maintain readable format
+-**"w"** parameter - Opens the file in write mode to overwrite existing contents
+-**.write() method** - Writes the string data to the specified file
 The file now contains only the updated allow list with restricted IPs removed
 
 Verification:
