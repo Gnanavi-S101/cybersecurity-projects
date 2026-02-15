@@ -24,6 +24,7 @@ cd projects           # Navigate to projects directory
 ls -l                 # List files with permissions
 ls -a                 # Show hidden files
 ls -la                # Show all files (hidden and normal) with permissions
+```
 
 ### 2. Understanding the permission string
 
@@ -53,24 +54,30 @@ r-- = others have read only
 
 I identified that project_k.txt had overly permissive write access for groups and others, violating least privilege:
 
+```bash
 ls -l project_k.txt                    # Check current permissions
 chmod g-w,o-w project_k.txt           # Remove write for group and others
+```
 Result: Only the file owner can modify the file, while group and others retain read access.
 
 4. Change permissions on hidden files
 
 Hidden files (starting with .) also required permission hardening:
 
+```bash
 ls -a                                  # Display hidden files
 chmod g-w .project_x.txt              # Remove group write permission
+```
 Result: Prevents group members from modifying sensitive hidden configuration files.
 
 5. Change directory permissions
 
 The drafts subdirectory had unnecessary execute permissions that could allow unauthorized access:
 
+```bash
 ls -l                                  # Check directory permissions
 chmod u-x,g-x drafts                  # Remove execute for user and group
+```
 Result: Restricts directory traversal, preventing users and groups from entering the directory while maintaining read permissions for listing contents.
 
 Summary
