@@ -48,6 +48,7 @@ Conducted incident investigation of unauthorized payment attempt, identifying ex
 ## Certifications
 - **Google Cybersecurity Professional Certificate** (2025)
 
+
 ## Contact
 
  [www.linkedin.com/in/gnanavi-s]
