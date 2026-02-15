@@ -50,5 +50,6 @@ Conducted incident investigation of unauthorized payment attempt, identifying ex
 
 ## Contact
 
-www.linkedin.com/in/gnanavi-s
-gnanavi.s11@gmail.com
+ [www.linkedin.com/in/gnanavi-s]
+ 
+ [gnanavi.s11@gmail.com]
