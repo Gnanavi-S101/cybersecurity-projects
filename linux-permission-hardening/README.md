@@ -39,16 +39,16 @@ d = directory
 - Characters 8-10: Other (everyone else) permissions
 
 **Permission types:**
-r = read permission
-w = write permission
-x = execute permission
--= permission denied
+r = read permission,
+w = write permission,
+x = execute permission,
+-= permission denied.
 
 **Example:** drwxr-xr--
-d = directory
-rwx = user has read, write, execute
-r-x = group has read, execute (no write)
-r-- = others have read only
+- d = directory
+- rwx = user has read, write, execute
+- r-x = group has read, execute (no write)
+- r-- = others have read only
 
 ### 3. Change file permissions
 
