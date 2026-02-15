@@ -25,6 +25,11 @@ ls -l                 # List files with permissions
 ls -a                 # Show hidden files
 ls -la                # Show all files (hidden and normal) with permissions
 ```
+![Listing files with ls -l](step1-ls-l.png)
+
+![Showing hidden files with ls -a](step1-ls-a.png)
+
+![Showing all files with ls -la](step1-ls-la.png)
 
 ### 2. Understanding the permission string
 
@@ -60,6 +65,8 @@ chmod g-w,o-w project_k.txt           # Remove write for group and others
 ```
 Result: Only the file owner can modify the file, while group and others retain read access.
 
+![Changing permissions on project_k.txt](step3-chmod-project-k.png)
+
 ### 4. Change permissions on hidden files
 
 Hidden files (starting with .) also required permission hardening:
@@ -70,6 +77,8 @@ chmod g-w .project_x.txt              # Remove group write permission
 ```
 Result: Prevents group members from modifying sensitive hidden configuration files.
 
+![Changing permissions on hidden file](step4-chmod-hidden.png)
+
 ### 5. Change directory permissions
 
 The drafts subdirectory had unnecessary execute permissions that could allow unauthorized access:
@@ -79,6 +88,8 @@ ls -l                                  # Check directory permissions
 chmod u-x,g-x drafts                  # Remove execute for user and group
 ```
 Result: Restricts directory traversal, preventing users and groups from entering the directory while maintaining read permissions for listing contents.
+
+![Changing directory permissions](step5-chmod-directory.png)
 
 ### Summary
 
