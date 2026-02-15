@@ -33,16 +33,16 @@ Linux permissions follow the format: drwxrwxrwx
 **Permission string breakdown:**
 First character: File type
 d = directory
-- = regular file
-Characters 2-4: User (owner) permissions
-Characters 5-7: Group permissions
-Characters 8-10: Other (everyone else) permissions
+-= regular file
+- Characters 2-4: User (owner) permissions
+- Characters 5-7: Group permissions
+- Characters 8-10: Other (everyone else) permissions
 
 **Permission types:**
 r = read permission
 w = write permission
 x = execute permission
-- = permission denied
+-= permission denied
 
 **Example:** drwxr-xr--
 d = directory
@@ -84,9 +84,9 @@ Result: Restricts directory traversal, preventing users and groups from entering
 
 I successfully hardened file and directory permissions on a Linux system by:
 
--Using ls commands to audit current permission configurations
--Interpreting Linux permission strings to identify security risks
--Applying chmod to remove excessive permissions from files and directories
--Enforcing least privilege by restricting write and execute permissions where unnecessary
--Securing both standard and hidden files to prevent unauthorized modification
+- Using ls commands to audit current permission configurations
+- Interpreting Linux permission strings to identify security risks
+- Applying chmod to remove excessive permissions from files and directories
+- Enforcing least privilege by restricting write and execute permissions where unnecessary
+- Securing both standard and hidden files to prevent unauthorized modification
 This implementation reduces the attack surface by ensuring users, groups, and others have only the minimum permissions required for their roles, preventing unauthorized file modification and execution.
