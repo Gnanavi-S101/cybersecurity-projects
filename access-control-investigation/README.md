@@ -37,7 +37,7 @@ Conducted a comprehensive security incident investigation involving unauthorized
 - Computer name: Up2-NoGud
 - IP address: 152.207.255.255
 
-!Event Log Evidence](event-log-details.png)
+![Event Log Evidence](event-log-details.png)
 
 *Event log showing unauthorized payroll transaction attempt*
 
