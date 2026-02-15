@@ -50,7 +50,7 @@ rwx = user has read, write, execute
 r-x = group has read, execute (no write)
 r-- = others have read only
 
-3. Change file permissions
+### 3. Change file permissions
 
 I identified that project_k.txt had overly permissive write access for groups and others, violating least privilege:
 
@@ -60,7 +60,7 @@ chmod g-w,o-w project_k.txt           # Remove write for group and others
 ```
 Result: Only the file owner can modify the file, while group and others retain read access.
 
-4. Change permissions on hidden files
+### 4. Change permissions on hidden files
 
 Hidden files (starting with .) also required permission hardening:
 
@@ -70,7 +70,7 @@ chmod g-w .project_x.txt              # Remove group write permission
 ```
 Result: Prevents group members from modifying sensitive hidden configuration files.
 
-5. Change directory permissions
+### 5. Change directory permissions
 
 The drafts subdirectory had unnecessary execute permissions that could allow unauthorized access:
 
@@ -80,7 +80,7 @@ chmod u-x,g-x drafts                  # Remove execute for user and group
 ```
 Result: Restricts directory traversal, preventing users and groups from entering the directory while maintaining read permissions for listing contents.
 
-Summary
+### Summary
 
 I successfully hardened file and directory permissions on a Linux system by:
 
