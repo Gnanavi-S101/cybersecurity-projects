@@ -122,11 +122,14 @@ WHERE NOT department = 'Information Technology';
 - Security significance: Non-IT staff may require different security protocols and awareness training.
 
 ### Summary
+
 I successfully investigated potential security threats by:
+
 - Analyzing failed login attempts after business hours to identify suspicious access patterns
 - Investigating login activity around specific dates related to security incidents
 - Identifying geographic anomalies in login attempts through location-based filtering
 - Using SQL logical operators (AND, OR, NOT) to create complex queries for targeted investigations
 - Applying pattern matching with LIKE operator for flexible filtering
 - Retrieving employee data for targeted security measures and communications
+  
 These SQL queries enabled efficient identification of security risks, suspicious login patterns, and support for implementing role-based and location-based security controls.
