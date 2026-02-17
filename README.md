@@ -7,15 +7,9 @@ Final year BCA student specializing in cybersecurity with a focus on Security Op
 
 ## Projects
 
-### 1. [Python IP Allowlist Automation](./python-ip-allowlist/)
-Automated healthcare access control management using Python to enforce IP-based restrictions on patient record systems.
-
-**Skills:** Python, File I/O, List Comprehensions, Security Automation  
-**Key Achievement:** Identified and fixed security vulnerability in list iteration approach
-
 ---
 
-### 2. [Linux File Permission Hardening](./linux-permission-hardening/)
+### 1. [Linux File Permission Hardening](./linux-permission-hardening/)
 Performed security audit and hardening of Linux file/directory permissions to enforce least privilege access controls.
 
 **Skills:** Linux CLI, chmod, Access Control, Security Hardening  
@@ -23,7 +17,7 @@ Performed security audit and hardening of Linux file/directory permissions to en
 
 ---
 
-### 3. [SQL Security Investigation](./sql-security-investigation/)
+### 2. [SQL Security Investigation](./sql-security-investigation/)
 Investigated potential security threats by analyzing login attempts and employee data using SQL filtering and pattern matching.
 
 **Skills:** SQL, Log Analysis, Threat Detection, Database Querying  
@@ -31,11 +25,19 @@ Investigated potential security threats by analyzing login attempts and employee
 
 ---
 
-### 4. [Access Control Investigation](./access-control-investigation/)
+### 3. [Access Control Investigation](./access-control-investigation/)
 Conducted incident investigation of unauthorized payment attempt, identifying expired contractor account with active financial system access.
 
 **Skills:** Incident Response, Log Analysis, Access Control Auditing, Risk Assessment  
 **Key Achievement:** Discovered 4-year-old expired account with admin privileges, preventing financial loss
+
+---
+
+### 4. [Python IP Allowlist Automation](./python-ip-allowlist/)
+Automated healthcare access control management using Python to enforce IP-based restrictions on patient record systems.
+
+**Skills:** Python, File I/O, List Comprehensions, Security Automation  
+**Key Achievement:** Identified and fixed security vulnerability in list iteration approach
 
 ---
 
