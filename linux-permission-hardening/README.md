@@ -100,4 +100,5 @@ I successfully hardened file and directory permissions on a Linux system by:
 - Applying chmod to remove excessive permissions from files and directories
 - Enforcing least privilege by restricting write and execute permissions where unnecessary
 - Securing both standard and hidden files to prevent unauthorized modification
+  
 This implementation reduces the attack surface by ensuring users, groups, and others have only the minimum permissions required for their roles, preventing unauthorized file modification and execution.
