@@ -1,6 +1,6 @@
 # Cybersecurity Projects Portfolio
 
-Professional cybersecurity projects completed as part of the Google Cybersecurity Professional Certificate, demonstrating hands-on skills in security analysis, incident response, and system hardening.
+Cybersecurity project portfolio focused on SOC analysis, access control investigation, and Linux system hardening. Each project demonstrates practical application of threat detection and security controls.
 
 ## About Me
 Final year BCA student specializing in cybersecurity with a focus on Security Operations Center (SOC) analysis. Skilled in Python automation, Linux security, SQL investigations, and access control management.
