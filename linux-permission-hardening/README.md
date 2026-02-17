@@ -25,11 +25,11 @@ ls -l                 # List files with permissions
 ls -a                 # Show hidden files
 ls -la                # Show all files (hidden and normal) with permissions
 ```
-![Listing files with ls -l](step1-ls-l.png)
+![Listing files with ls -l](step-1-ls-l.png)
 
 ![Showing hidden files with ls -a](step1-ls-a.png)
 
-![Showing all files with ls -la](step1-ls-la.png)
+![Showing all files with ls -la](step-1-ls-la.png)
 
 ### 2. Understanding the permission string
 
@@ -65,7 +65,7 @@ chmod g-w,o-w project_k.txt           # Remove write for group and others
 ```
 Result: Only the file owner can modify the file, while group and others retain read access.
 
-![Changing permissions on project_k.txt](step3-chmod-project-k.png)
+![Changing permissions on project_k.txt](step-3-chmod-project-k.png)
 
 ### 4. Change permissions on hidden files
 
